@@ -1,0 +1,208 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+    
+}
+
+body {
+    background-color: rgb(219, 219, 219);
+}
+
+/* STYLE NAV */
+.navbar .container .box-nav .logo {
+    margin-left: 30px;
+    color: rgb(15, 12, 12);
+}
+
+.container {
+    width: 100%;
+    border-radius: 5px;
+    margin-right: 10px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.navbar .box-nav{
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+
+}
+
+.navbar .box-nav .menu-nav ul{
+    display: flex;
+
+}
+
+.navbar .box-nav .menu-nav ul li {
+    list-style-type: none;
+    margin-inline: 10px;
+
+}
+
+.navbar .box-nav .menu-nav ul li a {
+    text-decoration: none;
+    color: rgb(24, 10, 10);
+    align-items: center;
+    margin-right: 30px;
+    
+    
+}
+
+.navbar .box-nav .menu-nav ul li a:hover{
+    text-decoration: none;
+    color: rgb(197, 215, 230);
+    align-items: center;
+    
+}
+
+/* STYLE HOME */
+
+.konten {
+    display: flex;
+    flex-direction: row;
+    height: 500px;
+    margin-inline: auto;
+    margin-top: 5px;
+    margin-bottom: 15px;
+    margin-left: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+}
+
+.bestseller {
+    display: flex;
+    flex-direction: row;
+    height: auto;
+    margin-inline: auto;
+    margin: 15px 5px 5px 5px;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    background-size:auto;
+
+}
+
+.title {
+    margin-top: 15px;
+}
+
+.banner-utama {
+    display: flex;
+    flex-direction: row;
+    height: 490px;
+    width: 880px;
+    margin-top: 5px;
+    border-radius: 5px;
+    background-image: url(img/banner-preview.png);
+    background-position: center ;
+    background-size: cover;
+  
+}
+
+.banner-kedua {
+    display: flex;
+    flex-direction: row;
+    height: 120px;
+    width: 430px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+    font-size: larger;
+    text-decoration:double;
+    align-self: center;
+}
+
+h2 {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+  }
+  
+  .col {
+    flex-basis: 25%;
+    padding: 10px;
+    margin: 20px;
+    min-width: 200px;
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
+    border-radius: 4px
+  }
+  
+  .col img {
+    width: 100%;
+  }
+
+  .footer {
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+  }
+
+
+/* STYLE PRODUCT */
+@media screen and (max-width : 1257px) {
+    .banner-utama {
+        width: 475px;
+        height: 340px;
+        background-position: center;
+        align-self: center;
+       
+    }
+}
+
+@media screen and (max-width : 756px) {
+    .navbar .box-nav {
+        flex-direction: column;
+        height: 60px;
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .navbar .box-nav .logo {
+        margin-bottom: 10px;
+    }
+
+    .navbar .container .box-nav .logo {
+        margin-left: -20px;
+    }
+
+    .navbar .box-nav .menu-nav ul{
+        margin-right: -15px;
+        margin-top: -25px;
+    }
+    
+    .konten {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .banner-utama {
+        width: 475px;
+        height: 340px;
+        background-position: center;
+        align-self: center;
+       
+    }
+
+    .col {
+        flex-basis: 50%;
+        text-align: center;
+      }
+    
+  
+}
+
+
+
